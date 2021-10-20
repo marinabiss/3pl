@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
 
-body {
+html {
   background-color: #000000;
-  height: 100%;
-  margin: 0;
+}
+body {
+  background: url(./img/home-bg.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
 #cont {
@@ -19,6 +23,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   float: right;
+  height: auto;
 }
 
 #navbar-toggler {
@@ -30,35 +35,29 @@ body {
   margin-top: 28px;
   margin-bottom: 34px;
   height: 90px;
+  padding-bottom: 15px;
+  line-height: 40px;
 }
 
 #nav-link {
   color: rgb(255, 255, 255);
   font-weight: 600;
+  text-decoration: none;
   padding-left: 15px;
+}
+#nav-link:hover {
+  color: #474646;
 }
 
 /************ Home css ************/
 
-.Home {
-  background: url(./img/home-bg.png) no-repeat center center;
-  width: "100vw";
-  height: "100vh";
-  background-size: cover;
-  position: center;
-  justify-content: center;
-  flex-direction: column;
-  display: flex;
-  margin-bottom: -3%;
-  margin-top: -0%;
-}
 .wrapper {
   max-width: 1100px;
   justify-content: space-evenly;
+
   position: relative;
   align-content: center;
   display: block;
-  height: 100%;
   margin-top: 205px;
   margin-bottom: 2%;
   margin-left: auto;
@@ -69,6 +68,7 @@ body {
   max-width: 30%;
   float: left;
   margin-right: 2%;
+  margin-top: 3%;
 }
 
 .img {
@@ -85,21 +85,44 @@ body {
   font-weight: 300;
   font-size: 14px;
   line-height: 30px;
-  min-height: 150px;
+  min-height: 100%;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.3);
   max-width: 65%;
   padding: 2%;
+  overflow: hidden;
+
+  box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.3);
 }
 
+.card-quote {
+  color: #ffffff;
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 20px;
+
+  justify-content: flex-end;
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-left: 40px;
+  margin-bottom: 0px;
+}
+
+.card-txt {
+  color: #ffffff;
+  line-height: 25px;
+  line-height: 20px;
+}
+
+.card-name {
+  font-size: 18px;
+  line-height: 40px;
+}
 /******* footer css********/
 .footer {
   background-color: #161616;
-  color: #fff;
-}
-.footer-p {
-  font-size: 14px;
-  font-family: Poppins;
-  font-weight: 400;
+
   color: #fff;
 }
