@@ -6,9 +6,7 @@ import Header from "./components/Header"
 import About from "./components/About"
 import Products from "./components/Products"
 import Clients from "./components/Clients"
-import Team from "./components/Team"
-import Contact from "./components/Contact"
-import Careers from "./components/Careers"
+
 import Footer from "./components/Footer"
 import "./App.scss"
 
